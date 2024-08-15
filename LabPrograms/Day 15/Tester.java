@@ -11,9 +11,12 @@ class Student
 	public void setStudentData()
 	{
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter Stud Data : ");
+		System.out.println("Enter Stud ID : ");
 		studentId= sc.nextInt();
+		System.out.println("Enter Stud Name : ");
 		studentName= sc.nextLine();
+		studentName= sc.nextLine();
+		System.out.println("Enter Stud Marks : ");
 		marks= sc.nextInt();	
 		grade=calculateGrade();
 	}
@@ -42,3 +45,12 @@ class  Tester
 		st.displayDetails();
 	}
 }
+
+
+/*
+Enter Stud Data :
+121
+Swap kature
+80
+Name = Swap kature,  StudentId = 121,  marks = 80,  grade = C
+*/
