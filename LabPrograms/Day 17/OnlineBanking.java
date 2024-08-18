@@ -20,16 +20,29 @@ class BankAccount
 	
 	public void withdraw(double amount)
 	{
-		if(currentBalance <=1000)
-			System.out.println("Insufficient Balance");
-		else if(currentBalance > amount)
+		if(amount > 0)
 		{
-			currentBalance-=amount;
-			System.out.println("You've successfully Withdrawn. \n"+"Available Balance : Rs."+currentBalance);			
+			if(amount < currentBalance)
+			{
+				double tempAmount=currentBalance - amount;
+				if(tempAmount <= 1000)
+				{
+					System.out.println("Maintain Minimum Balance of Rs.1000");		
+				}
+				else  {
+					currentBalance-=amount;
+					System.out.println("You've successfully Withdrawn \n");		
+					CurrentBalance();
+				}
+			}
+			else 
+			{
+				System.out.println("Insufficient Balance");
+			}
 		}
 		else {
-			System.out.println("Maintain Minimum Balance of Rs.1000");
-		}			
+			System.out.println("Enter valid amount");
+		}
 	}
 	
 	public void deposit(double amount)
@@ -37,7 +50,8 @@ class BankAccount
 		if(currentBalance >=1000)
 		{
 			currentBalance+=amount;
-			System.out.println("You've successfully Deposited \n"+"Available Balance : Rs."+currentBalance);			
+			System.out.println("You've successfully Deposited \n");		
+			CurrentBalance();
 		}
 	}
 	
