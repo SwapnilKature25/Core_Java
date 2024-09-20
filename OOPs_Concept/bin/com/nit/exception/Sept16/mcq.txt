@@ -199,6 +199,10 @@ D)don’t divide the number with 0
 E)don’t enter anything apart from int
 don’t divide the number with 0
 
+=> D)don’t divide the number with 0
+
+
+
  
 Question: 4
 
@@ -246,6 +250,12 @@ main end
 D)main start
 20
 main end
+
+=> C)main start
+10
+main end
+
+
 
  
 Question: 5
@@ -312,6 +322,13 @@ In finally
 Exception in thread “main” java.lang.NegativeArraySizeException
 
  
+=> D)main start
+In try
+In finally
+Exception in thread “main” java.lang.NegativeArraySizeException
+ 
+ 
+ 
 Question: 6
 
 Find the output of the Program
@@ -360,6 +377,12 @@ main end
 
 
 D)compilation error
+
+=> B)main start
+20
+main end
+
+
 
  
 Question: 7
@@ -421,6 +444,14 @@ In finally
 30
 main end
 
+=> A)main start
+In try
+In finally
+30
+main end
+
+
+
  
 Question: 8
 Find the output of the Program
@@ -470,7 +501,11 @@ main end
 
 D)java.lang.VerifyError: Instruction type does not match stack map[infinity loop]
 
- 
+=> D)java.lang.VerifyError: Instruction type does not match stack map[infinity loop]
+
+
+
+
 Question: 9
 Find the output of the Program
 
@@ -524,6 +559,10 @@ D)don’t pass the -ve number
 
 
 E)5
+
+=> E)5
+
+
 
  
 Question: 10
@@ -581,7 +620,10 @@ C)40
 
 D)Compile time error
 
- 
+=> C)40
+
+
+
 Question: 11
 
 Find the output of the Program
@@ -646,6 +688,14 @@ In try
 exception in thread main terminate the program
 main end
 
+=> C)main start
+In try
+In finally
+30
+main end
+
+
+
  
 Question: 12
 
@@ -686,3 +736,8 @@ C) m1 started
 
 
 D) No output
+
+=> 
+C) m1 started
+20
+
